@@ -1,0 +1,23 @@
+{
+  "name": "tensor-flow-tutorial",
+  "version": "1.0.0",
+  "description": "tutorials and experiments with tensorFlow.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/storycoding/tensor-flow-tutorial.git"
+  },
+  "author": "storycoding",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/storycoding/tensor-flow-tutorial/issues"
+  },
+  "homepage": "https://github.com/storycoding/tensor-flow-tutorial#readme",
+  "dependencies": {
+    "@tensorflow/tfjs": "^1.2.11",
+    "@tensorflow/tfjs-node": "^1.2.11"
+  }
+}

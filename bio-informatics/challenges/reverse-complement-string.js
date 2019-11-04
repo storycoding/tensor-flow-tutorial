@@ -1,7 +1,7 @@
 const reverseComplementString = (dnaString) => {
     let reversedDnaString = "";
 
-    for (let i = 0; i < dnaString.length; i++) {
+    for (let i = (dnaString.length - 1); i >= 0; i--) {
         const nucleobase = dnaString[i];
         switch (nucleobase) {
             case "A":
@@ -21,3 +21,5 @@ const reverseComplementString = (dnaString) => {
 
     return(reversedDnaString);
 }
+
+module.exports = reverseComplementString;

@@ -2,6 +2,7 @@ const reverseComplementString = require('./reverse-complement-string.js');
 const countKMers = require('./count-k-mers');
 const countPatternOccurences = require('./count-pattern-occurences');
 const countNonOverlappingPatternOccurences = require('./count-non-overlapping-pattern-occurences');
+const findStartingIndexesOfPattern = require('./find-starting-indexes-of-pattern');
 
 test('reverseComplementString', () => {
     const data = require('./test-data/reverse-complement-string.json');
@@ -50,5 +51,22 @@ test('countNonOverlappingPatternOccurences', () => {
     expect( 
         countNonOverlappingPatternOccurences(dnaString, pattern)
     ).toEqual(expected);
+    }
+);
+
+test('findStartingIndexesOfPattern', () => {
+    const data = require('./test-data/find-starting-indexes-of-pattern.json');
+    const { args, expected } = data;
+    const [ dnaString, pattern ] = args;
+
+    expect( 
+        JSON.stringify(
+            findStartingIndexesOfPattern(dnaString, pattern)
+        )
+    ).toEqual(
+        JSON.stringify(
+            expected
+        )
+    );
     }
 );

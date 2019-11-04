@@ -21,12 +21,12 @@ const findStartingIndexesOfPattern = (dnaString, pattern) => {
 
 module.exports = findStartingIndexesOfPattern;
 
-/*
-exercise solution
 
-const data = require('./test-data/find-starting-indexes-of-pattern.json');
-const { args } = data;
-const [ dnaString, pattern ] = args;
+/*
+exercise solution ( vibrio cholerae )
+
+const dnaString = require('./test-data/vibrio-cholerae.json');
+const pattern = "CTTGATCAT";
 
 const result = findStartingIndexesOfPattern(dnaString, pattern);
 console.log(result.toString().replace(/,/g, " "));

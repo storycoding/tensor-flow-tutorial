@@ -1,15 +1,15 @@
 const reverseComplementString = require('./reverse-complement-string.js');
-const countKMers = require('./count-k-mers');
+const findTopOccurringKmers = require('./find-top-occurring-k-mers');
 const countPatternOccurences = require('./count-pattern-occurences');
 const countNonOverlappingPatternOccurences = require('./count-non-overlapping-pattern-occurences');
 const findStartingIndexesOfPattern = require('./find-starting-indexes-of-pattern');
-const findClumps = require('./find-clumps');
+const checkIfClump = require('./check-if-clump');
 
 module.exports = {
     reverseComplementString,
-    countKMers,
+    findTopOccurringKmers,
     countPatternOccurences,
     countNonOverlappingPatternOccurences,
     findStartingIndexesOfPattern,
-    findClumps,
+    checkIfClump,
 }

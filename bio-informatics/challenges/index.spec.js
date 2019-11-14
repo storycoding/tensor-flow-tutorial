@@ -1,10 +1,10 @@
 const {
     reverseComplementString,
-    countKMers,
+    findTopOccurringKmers,
     countPatternOccurences,
     countNonOverlappingPatternOccurences,
     findStartingIndexesOfPattern,
-    findClumps,
+    checkIfClump,
 } = require('./');
 
 test('reverseComplementString', () => {
@@ -20,14 +20,14 @@ test('reverseComplementString', () => {
     }
 );
 
-test('countKMers', () => {
-    const data = require('./test-data/count-k-mers.json');
+test('findTopOccurringKmers', () => {
+    const data = require('./test-data/find-top-occurring-k-mers.json');
     const { args, expected } = data;
     const [ dnaString, length ] = args;
 
     expect(
         JSON.stringify(
-            countKMers(dnaString, length)
+            findTopOccurringKmers(dnaString, length)
             )
     ).toEqual(
         JSON.stringify(expected)
@@ -74,10 +74,14 @@ test('findStartingIndexesOfPattern', () => {
     }
 );
 
-test('findClumps', () => {
-    const data = require('./test-data/find-clumps.json');
-    const { args, expected } = data;
-    const [ genome, kMerLength, oriLength, occurences ] = args;
+describe('checkIfClump', () => {
+    const dataSet = require('./test-data/check-if-clump.json');
 
-    expect(findClumps(genome, kMerLength, oriLength, occurences)).toEqual(expected);
+    for (let i = 0; i < dataSet.length; i++) {
+        const data = dataSet[i];
+        const { args, expected } = data;
+        test(`checkIfClump-${JSON.stringify(args)}:${expected}`, () => {
+            expect(checkIfClump(...args)).toEqual(expected);
+        });
+    }
 });

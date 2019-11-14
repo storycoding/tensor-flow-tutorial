@@ -2,7 +2,7 @@
 // count the overlaps too
 // return multiple, or one, or an empty string
 
-const countKMers = (string, length) => {
+const findTopOccurringKmers = (string, length) => {
     const candidates = {};
     let highscore = 0;
     let winners = [];
@@ -42,4 +42,4 @@ const countKMers = (string, length) => {
     return winners;
 }
 
-module.exports = countKMers;
+module.exports = findTopOccurringKmers;

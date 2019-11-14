@@ -1,9 +1,9 @@
 {
     "args": [
-        "gatcagcataagggtccCTGCAATGCATGACAAGCCTGCAGTtgttttac",
-        "4",
-        "25",
-        "3"
+        "CGGACTCGACAGATGTGAAGAACGACAATGTGAAGACTCGACACGACAGAGTGAAGAGAAGAGGAAACATTGTAA",
+        5,
+        50,
+        4
     ],
-    "expected" : "TGCA"
+    "expected" : "CGACA GAAGA"
 }

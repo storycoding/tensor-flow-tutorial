@@ -1,8 +1,11 @@
-const reverseComplementString = require('./reverse-complement-string.js');
-const countKMers = require('./count-k-mers');
-const countPatternOccurences = require('./count-pattern-occurences');
-const countNonOverlappingPatternOccurences = require('./count-non-overlapping-pattern-occurences');
-const findStartingIndexesOfPattern = require('./find-starting-indexes-of-pattern');
+const {
+    reverseComplementString,
+    countKMers,
+    countPatternOccurences,
+    countNonOverlappingPatternOccurences,
+    findStartingIndexesOfPattern,
+    findClumps,
+} = require('./');
 
 test('reverseComplementString', () => {
     const data = require('./test-data/reverse-complement-string.json');
@@ -70,3 +73,11 @@ test('findStartingIndexesOfPattern', () => {
     );
     }
 );
+
+test('findClumps', () => {
+    const data = require('./test-data/find-clumps.json');
+    const { args, expected } = data;
+    const [ genome, kMerLength, oriLength, occurences ] = args;
+
+    expect(findClumps(genome, kMerLength, oriLength, occurences)).toEqual(expected);
+});

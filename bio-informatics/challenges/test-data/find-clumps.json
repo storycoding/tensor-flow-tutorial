@@ -1,0 +1,9 @@
+{
+    "args": [
+        "gatcagcataagggtccCTGCAATGCATGACAAGCCTGCAGTtgttttac",
+        "4",
+        "25",
+        "3"
+    ],
+    "expected" : "TGCA"
+}

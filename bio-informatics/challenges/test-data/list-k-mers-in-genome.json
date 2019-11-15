@@ -1,0 +1,97 @@
+[
+    {
+        "args": [
+            "ATCGATGC",
+            2
+        ],
+        "expected": [
+            {
+                "sequence": "AT",
+                "occurences": 2,
+                "indexes": [
+                    0,
+                    4
+                ]
+            },
+            {
+                "sequence": "TC",
+                "occurences": 1,
+                "indexes": [
+                    1
+                ]
+            },
+            {
+                "sequence": "CG",
+                "occurences": 1,
+                "indexes": [
+                    2
+                ]
+            },
+            {
+                "sequence": "GA",
+                "occurences": 1,
+                "indexes": [
+                    3
+                ]
+            },
+            {
+                "sequence": "TG",
+                "occurences": 1,
+                "indexes": [
+                    5
+                ]
+            },
+            {
+                "sequence": "GC",
+                "occurences": 1,
+                "indexes": [
+                    6
+                ]
+            }
+        ]
+    },
+    {
+        "args": [
+            "GTAGAGTA",
+            3
+        ],
+        "expected": [
+            {
+                "sequence": "GTA",
+                "occurences": 2,
+                "indexes": [
+                    0,
+                    5
+                ]
+            },
+            {
+                "sequence": "TAG",
+                "occurences": 1,
+                "indexes": [
+                    1
+                ]
+            },
+            {
+                "sequence": "AGA",
+                "occurences": 1,
+                "indexes": [
+                    2
+                ]
+            },
+            {
+                "sequence": "GAG",
+                "occurences": 1,
+                "indexes": [
+                    3
+                ]
+            },
+            {
+                "sequence": "AGT",
+                "occurences": 1,
+                "indexes": [
+                    4
+                ]
+            }
+        ]
+    }
+]

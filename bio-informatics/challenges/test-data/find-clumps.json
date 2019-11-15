@@ -1,9 +1,0 @@
-{
-    "args": [
-        "CGGACTCGACAGATGTGAAGAACGACAATGTGAAGACTCGACACGACAGAGTGAAGAGAAGAGGAAACATTGTAA",
-        5,
-        50,
-        4
-    ],
-    "expected" : "CGACA GAAGA"
-}

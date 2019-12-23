@@ -2,7 +2,9 @@
 // forming clumps of a certain length in a given genome
 // Note: it must handle genomes 10 million chars long
 
-const { listKMersInGenome, filterKMersByOccurrence, checkIfClump } = require('./');
+const checkIfClump = require('./check-if-clump');
+const filterKMersByOccurrence = require('./filter-k-mers-by-occurrence');
+const listKMersInGenome = require('./list-k-mers-in-genome');
 
 const findClumpedKMers = (genome, kMerLength, oriLength, occurences) => {
     const kMersList = listKMersInGenome(genome, kMerLength);

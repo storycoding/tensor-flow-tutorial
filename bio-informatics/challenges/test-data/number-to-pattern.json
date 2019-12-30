@@ -1,0 +1,16 @@
+[
+    {
+        "args": [
+            5437,
+            7
+        ],
+        "expected" : "CCCATTC"
+    },
+    {
+        "args": [
+            912,
+            6
+        ],
+        "expected" : "ATGCAA"
+    }
+]

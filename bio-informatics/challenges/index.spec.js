@@ -8,6 +8,8 @@ const {
     filterKMersByOccurrence,
     checkIfClump,
     findClumpedKMers,
+    numberToPattern,
+    patternToNumber,
 } = require('./');
 
 test('reverseComplementString', () => {
@@ -76,6 +78,7 @@ test('findStartingIndexesOfPattern', () => {
     );
     }
 );
+
 describe('EPIC: find clumps of kmers', () => {
 
     describe('listKMersInGenome', () => {
@@ -129,3 +132,30 @@ describe('EPIC: find clumps of kmers', () => {
     });
 });
 
+test('patternToNumber', () => {
+    const dataSet = require('./test-data/pattern-to-number.json');
+
+    for (let i = 0; i < dataSet.length; i++) {
+        const data = dataSet[i];
+
+        const { args, expected } = data;
+        const pattern = args;
+
+        expect(patternToNumber(pattern))
+            .toEqual(expected);
+    }
+});
+
+test('numberToPattern', () => {
+    const dataSet = require('./test-data/number-to-pattern.json');
+    
+    for (let i = 0; i < dataSet.length; i++) {
+        const data = dataSet[i];
+
+        const { args, expected } = data;
+        const [ number, patternLength ] = args;
+
+        expect(numberToPattern(number, patternLength))
+        .toEqual(expected);
+    }
+});

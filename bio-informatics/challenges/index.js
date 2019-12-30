@@ -7,6 +7,8 @@ const listKMersInGenome = require('./list-k-mers-in-genome');
 const filterKMersByOccurrence = require('./filter-k-mers-by-occurrence');
 const checkIfClump = require('./check-if-clump');
 const findClumpedKMers = require('./find-clumped-k-mers');
+const numberToPattern = require('./number-to-pattern');
+const patternToNumber = require('./pattern-to-number');
 
 module.exports = {
     reverseComplementString,
@@ -18,4 +20,6 @@ module.exports = {
     filterKMersByOccurrence,
     checkIfClump,
     findClumpedKMers,
+    numberToPattern,
+    patternToNumber,
 }

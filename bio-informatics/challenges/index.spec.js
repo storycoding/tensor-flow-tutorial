@@ -139,7 +139,7 @@ test('patternToNumber', () => {
         const data = dataSet[i];
 
         const { args, expected } = data;
-        const pattern = args;
+        const [ pattern ] = args;
 
         expect(patternToNumber(pattern))
             .toEqual(expected);

@@ -42,3 +42,7 @@ describe('patternToNumber', () => {
 describe('numberToPattern', () => {
     testDataSet('number-to-pattern');
 });
+
+describe('computeFrequencies', () => {
+    testDataSet('compute-frequencies');
+});

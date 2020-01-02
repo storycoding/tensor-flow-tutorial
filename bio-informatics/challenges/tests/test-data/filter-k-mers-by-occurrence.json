@@ -50,12 +50,12 @@
         ],
         "expected": [
             {
+                "sequence": "AT",
+                "occurences": 2,
                 "indexes": [
                     0,
                     4
-                ],
-                "occurences": 2,
-                "sequence": "AT"
+                ]
             }
         ]
     },
@@ -103,12 +103,12 @@
         ],
         "expected": [
             {
+                "sequence": "GTA",
+                "occurences": 2,
                 "indexes": [
                     0,
                     5
-                ],
-                "occurences": 2,
-                "sequence": "GTA"
+                ]                
             }
         ]
     }

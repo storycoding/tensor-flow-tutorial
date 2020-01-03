@@ -12,5 +12,19 @@
             6
         ],
         "expected" : "ATGCAA"
+    },
+    {
+        "args": [
+            45,
+            4
+        ],
+        "expected" : "AGTC"
+    },
+    {
+        "args": [
+            7255,
+            11
+        ],
+        "expected" : "AAAACTACCCT"
     }
 ]

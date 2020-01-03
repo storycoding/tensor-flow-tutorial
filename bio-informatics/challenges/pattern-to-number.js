@@ -1,4 +1,4 @@
-const getNucleotideValue =require('./get-nucleotide-value');
+const { getNucleotideValue } = require('./nucleotide-utils');
 
 const patternToNumber = (pattern, index = pattern.length - 1, total = 0) => {
     console.log({total})

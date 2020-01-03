@@ -1,10 +1,12 @@
+const { getNucleotideByIndex } = require('./nucleotide-utils');
+
 const numberToPattern = (number, patternLength) => {
-    const genomes = ["A", "C", "G", "T"];
     let pattern = [];
 
     for (let i = 0; i < patternLength; i++) {
         const remainder = number % 4;
-        pattern.push(genomes[remainder]);
+        const nucleotide = getNucleotideByIndex(remainder);
+        pattern.push(nucleotide);
         number = Math.floor(number / 4);
     }
 

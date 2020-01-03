@@ -10,5 +10,11 @@
             "CCCATTC"
         ],
         "expected" : 5437
+    },
+    {
+        "args": [
+            "ATTTCAAGTATAGGT"
+        ],
+        "expected" : 265335595
     }
 ]

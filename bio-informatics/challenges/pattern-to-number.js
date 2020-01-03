@@ -1,23 +1,16 @@
-const patternToNumber = (pattern) => {
-    const genomeValues = {
-        "A" : 0,
-        "C" : 1,
-        "G" : 2,
-        "T" : 3
-    }
-    const quartary = Object.keys(genomeValues).length;
+const getNucleotideValue =require('./get-nucleotide-value');
 
-    let number = 0;
+const patternToNumber = (pattern, index = pattern.length - 1, total = 0) => {
+    console.log({total})
+    if (index < 0) { return total }
 
-    for (let [i, digit] = [0, pattern.length - 1] ; i < pattern.length ; i++, digit--) {
-        const genome = pattern[i];
-        const genomeValue = genomeValues[genome];
-        const digitValue = quartary ** digit;
-        const iterationValue = genomeValue * digitValue;
-        number += iterationValue;
-    }
+    const nucleotide = pattern[index];
+    const value = getNucleotideValue(nucleotide);
+    const binominalDecimal = pattern.length - ( index + 1);
 
-    return number;
+    total += value * ( 4 ** binominalDecimal );
+
+    return patternToNumber(pattern, index - 1, total);
 };
 
 module.exports = patternToNumber;
